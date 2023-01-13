@@ -6,3 +6,5 @@ A collection of Powershell scripts I've written.
 [GetGoogleGroups.ps1](https://github.com/kadenscroggins/Powershell/blob/main/GetGoogleGroups.ps1) - Uses GAM to get a list of all the users from a Google group and writes it to file. Also creates allowlists to ignore users so that they aren't saved. Created to work with an existing script that adds/removes users to a Google group based on an SQL query.
 
 [email-log-search-result-deletion.ps1](https://github.com/kadenscroggins/Powershell/blob/main/email-log-search-result-deletion.ps1) - I used Google Admin to pull a CSV of message IDs from the email reporting tool when we got a bunch of phishing messages that were individual emails. This takes that CSV and converts it to commands to delete messages from users inboxes.
+
+[delete-csv-messages.ps1](https://github.com/kadenscroggins/Powershell/blob/main/delete-csv-messages.ps1) - Looks for a file named `ids.csv` and deletes messages from all users' inboxes, going one message at a time. No headers needed in the file, each line should just be one `rfc822msgid`.
