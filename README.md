@@ -9,4 +9,4 @@ A collection of Powershell scripts I've written.
 
 [delete-csv-messages.ps1](https://github.com/kadenscroggins/Powershell/blob/main/delete-csv-messages.ps1) - Looks for a file named `ids.csv` and deletes messages from all users' inboxes, going one message at a time. No headers needed in the file, each line should just be one `rfc822msgid`.
 
-[update-high-storage-users.ps1](https://github.com/kadenscroggins/Powershell/blob/main/update-high-storage-users.ps1) - Pulls users using more than $quota MB of storage from Google Workspace via GAM, and adds them to a Google group. Used to warn users about storage quotas being implemented.
+[update-high-storage-users.ps1](https://github.com/kadenscroggins/Powershell/blob/main/update-high-storage-users.ps1) - Pulls users using more than `$quota` MB of storage from Google Workspace via GAM, and adds them to a Google group. Used to warn users about storage quotas being implemented.
