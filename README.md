@@ -10,3 +10,5 @@ A collection of Powershell scripts I've written.
 [delete-csv-messages.ps1](https://github.com/kadenscroggins/Powershell/blob/main/delete-csv-messages.ps1) - Looks for a file named `ids.csv` and deletes messages from all users' inboxes, going one message at a time. No headers needed in the file, each line should just be one `rfc822msgid`.
 
 [update-high-storage-users.ps1](https://github.com/kadenscroggins/Powershell/blob/main/update-high-storage-users.ps1) - Pulls users using more than `$quota` MB of storage from Google Workspace via GAM, and adds them to a Google group. Used to warn users about storage quotas being implemented.
+
+[inactive-user-warning.ps1](https://github.com/kadenscroggins/Powershell/blob/main/update-inactive-user-warning.ps1) - Takes a list of inactive users on our domain who need to be deactivated, verifies that their accounts still exist in our domain, and adds them to a group for warning them with a GAM command. At the time of writing, >20,000 users were flagged as inactive, but only ~9,000 still had Google Workspace accounts, so I used a hash table to speed up the process that compares existing accounts to inactive users.
